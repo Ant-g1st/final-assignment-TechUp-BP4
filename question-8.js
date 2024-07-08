@@ -19,9 +19,6 @@ const getReponse = async () => {
 }
 const res = await getReponse()
 // console.log(res,'res')
-let newUsers = res.map((user) => {
-    // console.log(user.name)
-    return user.name
-})
+let newUsers = res.map((user) => user.name)
 console.log(newUsers)
 // console.log(response)
